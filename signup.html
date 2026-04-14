@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sign Up for Password Manager</h1>
+    <div class="card">
+        <form id="signupForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password">Password:</label>
+            <div class="password-container">
+                <input type="password" id="password" required>
+                <button type="button" id="toggleSignupPassword">👁️</button>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

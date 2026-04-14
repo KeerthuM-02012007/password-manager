@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Password Manager</h1>
+    <p id="welcomeMessage"></p>
+    <button id="logoutBtn">Logout</button>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+    <div class="card">
+        <form id="passwordForm">
+            <label for="website">Website Name:</label>
+            <input type="text" id="website" required>
+            <label for="email">Email:</label>
+            <input type="text" id="email" required>
+            <label for="password">Password:</label>
+            <div class="password-container">
+                <input type="password" id="password" required>
+                <button type="button" id="toggleFormPassword">👁️</button>
+            </div>
+            <button type="submit">Save</button>
+        </form>
+    </div>
+    <div class="card">
+        <h2>Saved Passwords</h2>
+        <input type="text" id="searchInput" placeholder="Search by website or email...">
+        <table id="passwordTable">
+        <thead>
+            <tr>
+                <th>Website</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="passwordTableBody">
+        </tbody>
+    </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
