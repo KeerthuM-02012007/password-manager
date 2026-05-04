@@ -1,0 +1,1 @@
+{\n  "name": "password-manager",\n  "version": "1.0.0",\n  "description": "A password manager application",\n  "main": "index.js",\n  "scripts": {\n    "start": "node index.js",\n    "test": "echo \"Error: no test specified\" && exit 1"\n  },\n  "keywords": ["password", "manager", "security"],\n  "author": "",\n  "license": "ISC"\n}
